@@ -46,6 +46,4 @@ rounds.forEach((round) => {
   }
 });
 
-score += 12;
-
 console.log(score);

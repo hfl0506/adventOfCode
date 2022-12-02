@@ -19,7 +19,6 @@ const scoreMap = {
 let score = 0;
 
 rounds.forEach((round, idx) => {
-  console.log(`${idx} : ${round}`);
   const [first, second] = round.split(" ");
 
   //draw
@@ -29,7 +28,6 @@ rounds.forEach((round, idx) => {
     (first === "C" && second === "Z")
   ) {
     const draw = scoreMap[second] + 3;
-    console.log(`draw : ${draw}`);
     score += draw;
   }
 
@@ -40,7 +38,6 @@ rounds.forEach((round, idx) => {
     (first === "C" && second === "X")
   ) {
     const win = scoreMap[second] + 6;
-    console.log(`win : ${win}`);
     score += win;
   }
 
@@ -50,7 +47,6 @@ rounds.forEach((round, idx) => {
     (first === "C" && second === "Y")
   ) {
     const lost = scoreMap[second] + 0;
-    console.log(`lost : ${lost}`);
     score += lost;
   }
 });
