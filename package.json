@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node Day8/b.js"
+    "dev": "node Day9/b.js"
   },
   "keywords": [],
   "author": "",
